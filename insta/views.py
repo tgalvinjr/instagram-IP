@@ -61,7 +61,7 @@ def profile(request):
 
 @login_required(login_url='/accounts/login/')
 def view_profile(request,id):
-    searched_user=User.objects.filter(id=id).first()
+    searched_user=User.objects.filter(id=id)
     profile = searched_user
     details = Profile.get_profile_by_id(id)
     images = Image.get_images_on_profile(id)
