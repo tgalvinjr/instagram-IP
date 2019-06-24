@@ -22,7 +22,7 @@
 ### Cloning/Installing and running
 * Clone the application using git clone(this copies the app onto your device). In terminal:
 
-          $ git clone https://github.com/tgalvinjr/gallery.git
+          $ git clone https://github.com/tgalvinjr/instagram-IP.git
           $ cd gallery
 
 * Creating the virtual environment
@@ -33,7 +33,7 @@
 
 * Installing Django and other Modules
 
-          $ python3.6 -m pip install Django==1.12 
+          $ python3.6 -m pip install Django==1.11
           $ python3.6 -m pip3 install django-Bootstrap3
           $ python3.6 -m pip install Pillow
           $ python3.6 -m pip install -r requirements.txt
@@ -56,7 +56,7 @@
 
 
 ## Github Pages
-    The UI templates can be tested on [Heroku](https://alvo-gallery.herokuapp.com/home)
+    The UI templates can be tested on [Heroku](https://alvogram.herokuapp.com/home)
 
 ## Known Bugs
 None at the moment
@@ -66,7 +66,7 @@ Alvin Michoma
 [Github](https://github.com/tgalvinjr)
 
 ## License and Copyright information
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/tgalvinjr/Triangle_Tracker/blob/master/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/tgalvinjr/instagram-IP/blob/master/LICENSE) file for details
 
 ## Acknowledgments
 - Hat tip to anyone who unblocked me in class
