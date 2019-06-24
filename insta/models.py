@@ -41,7 +41,7 @@ class Profile(models.Model):
 
     @classmethod
     def get_profile_by_id(cls, id):
-        user_profile = Profile.objects.get(user=id)
+        user_profile = Profile.objects.get(id=id)
         return user_profile
 
     @classmethod
