@@ -29,12 +29,13 @@ DEBUG = config('DEBUG', default=False)
 if config('MODE') == "dev":
     DATABASES = {
         'default': {
+        
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'instagram',
-            'USER': 'alvin',
-            'PASSWORD': 'alvin123',
-            # 'HOST': config('DB_HOST'),
-            # 'PORT': '',
+            'NAME': config('DB_NAME'),
+            'USER': config('DB_USER'),
+            'PASSWORD': config('DB_PASSWORD'),
+            'HOST': config('DB_HOST'),
+            'PORT': '',
         }
     }
 # production
@@ -56,7 +57,7 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 # SECURITY WARNING: keep the secret key used in production secret!
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
 
 # Application definition
 
@@ -150,7 +151,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+
 STATICFILES_DIRS=[
    os.path.join(BASE_DIR, "static"),
 ]
